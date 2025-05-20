@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tvFeedBack"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizActivity">
+
+    <Button
+        android:id="@+id/btnTrue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="113dp"
+        android:text="True"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvFeedback" />
+
+    <Button
+        android:id="@+id/False"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="266dp"
+        android:text="false"
+        app:layout_constraintStart_toEndOf="@+id/btnTrue"
+        app:layout_constraintTop_toBottomOf="@+id/tvQuestion" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="241dp"
+        android:text="Next"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvFeedback" />
+
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="195dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="91dp"
+        android:layout_marginTop="132dp"
+        android:text="Question"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvFeedback"
+        android:layout_width="152dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="98dp"
+        android:layout_marginTop="100dp"
+        android:text="feedback"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvQuestion" />
+</androidx.constraintlayout.widget.ConstraintLayout>
